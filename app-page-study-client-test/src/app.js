@@ -6,6 +6,9 @@
 import Vue from 'vue';
 import App from './App.vue';
 import {createRouter} from './router.js';
+import sw from './util/serviceworkers/swregister'
+
+sw()
 
 Vue.config.productionTip = false;
 

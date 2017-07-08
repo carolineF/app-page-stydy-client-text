@@ -10,7 +10,7 @@ const utils = require('./utils');
 const webpack = require('webpack');
 const config = require('../config');
 const merge = require('webpack-merge');
-const baseWebpackConfig = require('./webpack.base.conf');
+const baseWebpackConfig = require('./webpack.base.conf.js');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -63,7 +63,7 @@ let webpackConfig = merge(baseWebpackConfig, {
         }),
 
         new SkeletonWebpackPlugin({
-            webpackConfig: require('./webpack.skeleton.conf')
+            webpackConfig: require('./webpack.skeleton.conf.js')
         }),
 
         // generate dist index.html with correct asset hash for caching.

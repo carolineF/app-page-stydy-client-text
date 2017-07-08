@@ -12,7 +12,7 @@ const swPrecacheConfig = require('./sw-precache');
 module.exports = {
     swPrecache: swPrecacheConfig,
     build: {
-        env: require('./prod.env'),
+        env: require('./prod.env.js'),
         index: path.resolve(__dirname, '../dist/index.html'),
         assetsRoot: path.resolve(__dirname, '../dist'),
         assetsSubDirectory: 'static',
@@ -33,7 +33,7 @@ module.exports = {
         bundleAnalyzerReport: process.env.npm_config_report
     },
     dev: {
-        env: require('./dev.env'),
+        env: require('./dev.env.js'),
         port: 8082,
         autoOpenBrowser: true,
         assetsSubDirectory: 'static',

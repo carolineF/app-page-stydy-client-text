@@ -19,7 +19,7 @@ const path = require('path');
 const express = require('express');
 const webpack = require('webpack');
 const proxyMiddleware = require('http-proxy-middleware');
-const webpackConfig = require('./webpack.dev.conf');
+const webpackConfig = require('./webpack.dev.conf.js');
 
 // 默认调试服务器端口
 let port = process.env.PORT || config.dev.port;

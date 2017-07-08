@@ -8,7 +8,7 @@
 const webpack = require('webpack');
 const config = require('../config');
 const merge = require('webpack-merge');
-const baseWebpackConfig = require('./webpack.base.conf');
+const baseWebpackConfig = require('./webpack.base.conf.js');
 const nodeExternals = require('webpack-node-externals');
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 

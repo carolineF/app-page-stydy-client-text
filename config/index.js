@@ -13,8 +13,8 @@ module.exports = {
     swPrecache: swPrecacheConfig,
     build: {
         env: require('./prod.env.js'),
-        index: path.resolve(__dirname, '../dist/index.html'),
-        assetsRoot: path.resolve(__dirname, '../dist'),
+        index: path.resolve(__dirname, '../docs/index.html'),
+        assetsRoot: path.resolve(__dirname, '../docs'),
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
         productionSourceMap: true,

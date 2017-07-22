@@ -1,4 +1,5 @@
 node_modules
 dist
+docs
 config/sw.tmpl.js
 index.html
